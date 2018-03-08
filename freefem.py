@@ -79,9 +79,14 @@ class FreeFemLexer(CppLexer):
     
     # function parameters
     parameters = set((
-    'hmin', 'hmax', 'err', 'errg', 'nbvx', 'nbsmooth', 'nbjacoby', 'ratio', 'omega', 'iso', 'abserror', 'cutoff', 'inquire', 'splitpbedge', 'maxsubdiv', 'keepbackvertices', 'isMetric', 'power', 'thetamax', 'splitin2', 'metric', 'nomeshgeneration', 'rescaling', 'periodic', 'cmm', 'flags', 'qfe', 'qforder', 'fixeborder', 'precon', 'nbiter', 'eps', 'veps', 'stop','label', 'region'
+    'hmin', 'hmax', 'err', 'errg', 'nbvx', 'nbsmooth', 'nbjacoby', 'ratio', 'omega', 'iso', 'abserror', 'cutoff', 'inquire', 'splitpbedge', 'maxsubdiv', 'keepbackvertices', 'isMetric', 'power', 'thetamax', 'splitin2', 'metric', 'nomeshgeneration', 'rescaling', 'periodic', 'cmm', 'flags', 'qfe', 'qforder', 'fixedborder', 'precon', 'nbiter', 'eps', 'veps', 'stop','label', 'region', 'flabel', 'fregion'
     ))
 
+    # deprecated
+    deprecated = set((
+    'fixeborder'
+    ))
+	
     # do not highlight
     suppress_highlight = set((
     'namespace', 'template', 'mutable', 'using', 'asm', 'typeid', 
