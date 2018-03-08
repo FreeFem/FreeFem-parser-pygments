@@ -10,7 +10,7 @@ This file must be added in, for example:
 ```
 And run:
 ```bash
-python /usr/lib/python2.7/site-packages/pygments/lexers/_mapping.py
+cd /usr/lib/python2.7/site-packages/pygments/lexers/ && sudo python _mapping.py
 ```
 
 ## Authors
