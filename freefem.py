@@ -79,7 +79,7 @@ class FreeFemLexer(CppLexer):
     
     # function parameters
     parameters = set((
-    'hmin', 'hmax', 'err', 'errg', 'nbvx', 'nbsmooth', 'nbjacoby', 'ratio', 'omega', 'iso', 'abserror', 'cutoff', 'inquire', 'splitpbedge', 'maxsubdiv', 'keepbackvertices', 'isMetric', 'power', 'thetamax', 'splitin2', 'metric', 'nomeshgeneration', 'periodic', 'cmm', 'flags', 'qfe', 'qforder', 'fixeborder', 'precon', 'nbiter', 'eps', 'veps', 'stop','label', 'region'
+    'hmin', 'hmax', 'err', 'errg', 'nbvx', 'nbsmooth', 'nbjacoby', 'ratio', 'omega', 'iso', 'abserror', 'cutoff', 'inquire', 'splitpbedge', 'maxsubdiv', 'keepbackvertices', 'isMetric', 'power', 'thetamax', 'splitin2', 'metric', 'nomeshgeneration', 'rescaling', 'periodic', 'cmm', 'flags', 'qfe', 'qforder', 'fixeborder', 'precon', 'nbiter', 'eps', 'veps', 'stop','label', 'region'
     ))
 
     # do not highlight
