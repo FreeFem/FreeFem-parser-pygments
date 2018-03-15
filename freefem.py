@@ -67,8 +67,8 @@ class FreeFemLexer(CppLexer):
     'acos', 'acosh', 'adaptmesh', 'adj', 'AffineCG', 'AffineGMRES', 'asin',
     'asinh', 'assert', 'atan', 'atan2', 'atanh', 'BFGS', 'buildlayers', 'buildmesh', 'getline', 'seekg', 'tellg', 
     'ceil', 'change', 'checkmovemesh', 'clock', 'cmaes', 'conj', 'convect', 'cos',
-    'cosh', 'cube', 'dfft', 'diffnp', 'diffpos', 'dist', 'EigenValue', 'emptymesh',
-    'erf', 'erfc', 'exec', 'exit', 'exp', 'fdim', 'floor', 'fmax', 'fmin', 'fmod',
+    'cosh', 'cube', 'dfft', 'diffnp', 'diffpos', 'dist', 'dx', 'dxx', 'dxy', 'dxz', 'dy', 'dyx', 'dyy', 'dyz', 'dz', 'dzx', 'dzy', 'dzz',
+    'EigenValue', 'emptymesh', 'erf', 'erfc', 'exec', 'exit', 'exp', 'fdim', 'floor', 'fmax', 'fmin', 'fmod',
     'imag', 'int1d', 'int2d', 'int3d', 'intalledges', 'interpolate', 'invdiffnp',
     'invdiffpos', 'isoline', 'j0', 'j1', 'jn', 'jump', 'LinearCG', 'LinearGMRES',
     'log', 'log10', 'max', 'mean', 'medit', 'min', 'movemesh', 'movemesh23', 'NLCG',
@@ -79,7 +79,10 @@ class FreeFemLexer(CppLexer):
     
     # function parameters
     parameters = set((
-    'hmin', 'hmax', 'err', 'errg', 'nbvx', 'nbsmooth', 'nbjacoby', 'ratio', 'omega', 'iso', 'abserror', 'cutoff', 'inquire', 'splitpbedge', 'maxsubdiv', 'keepbackvertices', 'isMetric', 'power', 'thetamax', 'splitin2', 'metric', 'nomeshgeneration', 'rescaling', 'periodic', 'cmm', 'flags', 'qfe', 'qforder', 'fixedborder', 'precon', 'nbiter', 'eps', 'veps', 'stop','label', 'region', 'flabel', 'fregion'
+    'hmin', 'hmax', 'err', 'errg', 'nbvx', 'nbsmooth', 'nbjacoby', 'ratio', 'omega', 'iso', 'abserror', 'cutoff', 'inquire', 'splitpbedge', 'maxsubdiv', 'keepbackvertices',
+    'isMetric', 'power', 'thetamax', 'splitin2', 'metric', 'nomeshgeneration', 'rescaling', 'periodic', 'cmm', 'flags', 'qfe', 'qforder', 'fixedborder', 'precon',
+    'nbiter', 'eps', 'veps', 'stop','label', 'region', 'flabel', 'fregion', 'inside', 't', 'op', 'U2Vc', 'facemerge', 'ptmerge', 'orientation', 'wait', 'ps', 'coef',
+    'fill', 'value', 'aspectratio', 'bb', 'nbiso', 'nbarrow', 'viso', 'varrow', 'bw', 'grey', 'hsv', 'boundary', 'dim', 'prev', 'WindowIndex', 'split'
     ))
 
     # deprecated
@@ -109,7 +112,7 @@ class FreeFemLexer(CppLexer):
             elif value in self.functions:
                 yield index, Name.Function, value
             elif value in self.parameters:
-                yield index, Keyword.Reserved, value
+                yield index, Keyword.Pseudo, value
             elif value in self.suppress_highlight:
                 yield index, Name, value
             else:
