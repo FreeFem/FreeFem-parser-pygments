@@ -4,13 +4,18 @@ This parser is used to build the [FreeFem-doc](https://github.com/FreeFem/FreeFe
 
 ## Usage
 
-This file must be added in, for example:
+This file must be added, for example under Ubuntu 16.04, in:
 ```bash
 /usr/lib/python2.7/site-packages/pygments/lexers
 ```
 And run:
 ```bash
 cd /usr/lib/python2.7/site-packages/pygments/lexers/ && sudo python _mapping.py
+```
+
+On arch, the pygments path is:
+```bash
+/usr/lib/python3.6/site-packages/pygments/lexers
 ```
 
 ## Authors
