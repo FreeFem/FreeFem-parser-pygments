@@ -18,6 +18,11 @@ On arch, the pygments path is:
 /usr/lib/python3.6/site-packages/pygments/lexers
 ```
 
+On MacOS, the pygments path is:
+```bash
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pygments/lexers
+```
+
 ## Authors
 
 | Author | Github | Website |
