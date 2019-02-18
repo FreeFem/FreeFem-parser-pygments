@@ -36,7 +36,7 @@ class FreeFemLexer(CppLexer):
     mimetypes = ['text/x-freefem']
 
     # Language operators
-    operators = set(('+', '-', '*', '.*', '/', './', '%', '^', '^-1', ':', '\''))
+    operators = set(('+', '-', '*', '.*', '/', './', '%', '^', '^-1', ':', '\'', '#'))
 
     # types
     types = set((
