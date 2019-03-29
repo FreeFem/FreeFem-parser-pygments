@@ -1,4 +1,4 @@
-FreeFem++ parser for `pygments`
+[FreeFEM](https://freefem.org/) parser for `pygments`
 
 This parser is used to build the [FreeFem-doc](https://github.com/FreeFem/FreeFem-doc)
 
